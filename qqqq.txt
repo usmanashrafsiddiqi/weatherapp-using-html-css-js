@@ -1,0 +1,14 @@
+  <div>
+  <img src="humidity.png" width="45px">
+  <div>
+  <p class="humidity">48%</p>
+    <p>Humidity</p>
+    </div>
+    </div>
+<div>
+<img src="wind.png" width="45px">
+<div>
+<p> 10.29 km/h</p>
+<p>Wind speed</p>
+</div>
+</div>

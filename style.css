@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.container {
+    background-color: #007bff; /* Light blue background */
+    width: 100%;
+    max-width: 400px; /* Slightly smaller for better mobile fit */
+    height: auto; /* Let height adjust to content */
+    border: 2px solid #0056b3; /* Darker blue border */
+    border-radius: 12px;
+    margin: 20px auto; /* Space from top */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #0056b3; /* Darker blue for navbar */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar input {
+    flex: 1; /* Make input grow to fill space */
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.navbar button {
+    border-radius: 7px;
+    border: none; /* Remove border for button */
+    background-color: #66b3ff; /* Light blue for button */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar img {
+    width: 24px; /* Adjusted icon size */
+    height: 24px;
+}
+
+/* Weather picture and temperature styling */
+.weatherpic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.temp {
+    font-size: 80px; /* Slightly smaller for better fit */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+}
+
+.city {
+    font-size: 40px; /* Slightly smaller */
+    color: #ffffff; /* White text */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* End section styling */
+.end {
+    display: flex;
+    justify-content: space-around; /* Space evenly */
+    margin-top: 20px;
+    color: #ffffff; /* White text for contrast */
+}
+
+.end div {
+    flex: 1;
+    text-align: center;
+}
+
+.humidity,
+.windspeed {
+    font-size: 28px; /* Slightly smaller */
+}
+
+.end p {
+    font-size: 16px;
+    color: #ffffff; /* White text for contrast */
+}
+
+.hello,
+.bello {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Full width on small devices */
+        padding: 15px;
+    }
+
+    .temp {
+        font-size: 60px; /* Smaller font size on small devices */
+    }
+
+    .city {
+        font-size: 30px; /* Smaller font size */
+    }
+
+    .humidity,
+    .windspeed {
+        font-size: 24px; /* Adjust size for mobile */
+    }
+
+    .end p {
+        font-size: 14px; /* Smaller for mobile */
+    }
+}
