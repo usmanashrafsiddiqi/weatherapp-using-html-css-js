@@ -6,12 +6,12 @@ const searchbtn = document.querySelector(".navbar button");
 const changeicon = document.querySelector(".change");
 
 const weatherIcons = {
-    Clouds: "clouds.png",
-    Clear: "clear.png",
-    Rain: "rain.png",
-    Mist: "mist.png",
-    Drizzle: "drizzle.png",
-    Haze: "clouds.png" 
+    Clouds: "images/clouds.png",
+    Clear: "images/clear.png",
+    Rain: "images/rain.png",
+    Mist: "images/mist.png",
+    Drizzle: "images/drizzle.png",
+    Haze: "images/clouds.png" 
 };
 
 async function fetchWeather(city) {
