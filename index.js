@@ -17,8 +17,7 @@ const weatherIcons = {
 async function fetchWeather(city) {
     try {
         const response = await fetch(`${api}${city}&appid=${apikey}`);
-
-      
+        
         if (!response.ok) {
             throw new Error(`City not found: ${response.statusText}`);
         }
@@ -33,10 +32,9 @@ async function fetchWeather(city) {
 
         // Update the weather icon based on the weather condition
         const weatherCondition = data.weather[0].main;
-        changeicon.src = weatherIcons[weatherCondition] || "default.png";
+        changeicon.src = weatherIcons[weatherCondition] || "images/default.png";
 
     } catch (error) {
-        
         console.error("Error fetching weather data:", error);
         alert("Unable to fetch weather data. Please check the city name and try again.");
     }
@@ -44,7 +42,6 @@ async function fetchWeather(city) {
 
 searchbtn.addEventListener("click", () => {
     const city = searchbox.value.trim();
-    
     
     if (city) {
         fetchWeather(city);
